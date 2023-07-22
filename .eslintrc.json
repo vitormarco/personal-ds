@@ -24,8 +24,7 @@
     "plugin:prettier/recommended",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
-    "plugin:security/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:security/recommended"
   ],
   "plugins": ["simple-import-sort"],
   "rules": {

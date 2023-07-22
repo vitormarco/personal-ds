@@ -14,18 +14,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix -f git-log",
-      "prettier --write",
-      "git add"
-    ],
-    "*.{js,jsx}/": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{js,css,md}": "prettier --write"
-  },
   "dependencies": {
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
