@@ -24,7 +24,10 @@
     "plugin:prettier/recommended",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
-    "plugin:security/recommended"
+    "plugin:security/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react"
   ],
   "plugins": ["simple-import-sort"],
   "rules": {
