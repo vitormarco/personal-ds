@@ -5,6 +5,7 @@ import motion from './motion'
 import opacity from './opacity'
 import shadow from './shadow'
 import spacing from './spacing'
+import typography from './typography'
 
 const theme = {
   border,
@@ -14,6 +15,7 @@ const theme = {
   opacity,
   shadow,
   spacing,
+  typography,
 }
 
 export default theme
