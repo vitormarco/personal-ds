@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "vitest",
+    "test": "vitest --passWithNoTests",
     "test:coverage": "vitest --coverage"
   },
   "husky": {
@@ -27,6 +27,7 @@
     "next": "13.4.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "styled-components": "^6.0.5",
     "typescript": "5.1.6"
   },
   "devDependencies": {
