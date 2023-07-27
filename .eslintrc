@@ -18,22 +18,30 @@
   },
   "extends": [
     "next/core-web-vitals",
-    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "prettier",
     "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:sonarjs/recommended",
-    "plugin:unicorn/recommended",
     "plugin:security/recommended",
-    "airbnb",
+    "plugin:unicorn/recommended",
     "plugin:storybook/recommended",
-    "prettier"
+    "plugin:react/jsx-runtime"
   ],
   "plugins": ["simple-import-sort", "prettier"],
   "rules": {
+    "react/function-component-definition": 0,
+    "react/jsx-no-useless-fragment": 0,
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".ts", ".tsx", ".js", ".jsx"]
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -43,7 +51,7 @@
         "ts": "never",
         "tsx": "never"
       }
-   ],
+    ],
     "unicorn/filename-case": [
       "error",
       {
