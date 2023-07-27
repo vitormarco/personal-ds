@@ -10,8 +10,7 @@
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "vitest --passWithNoTests --run",
-    "test:watch": "vitest --passWithNoTests",
+    "test": "vitest --passWithNoTests",
     "test:coverage": "vitest --coverage"
   },
   "husky": {
