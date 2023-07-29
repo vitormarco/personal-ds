@@ -1,22 +1,39 @@
+import { useMemo } from 'react'
+
+import { SizeType } from '@/types/ProgressBar/styles.types'
+
 import * as S from './styles'
 
 interface IProgressBarProperties {
   progress: number
+  size?: SizeType
 }
 
-const ProgressBar = ({ progress }: IProgressBarProperties) => {
+const ProgressBar = ({ progress, size = 'large' }: IProgressBarProperties) => {
+  const preventLowerThanZeroAndHigherThanHundred = useMemo(() => {
+    if (progress < 0) {
+      return 0
+    }
+
+    if (progress > 100) {
+      return 100
+    }
+
+    return progress
+  }, [progress])
+
   return (
-    <S.Container>
-      <S.Bar
-        $progress={progress}
-        role="progressbar"
-        aria-valuenow={progress}
-        aria-valuemin={0}
-        aria-valuemax={100}
-      >
-        <S.Label>{progress}%</S.Label>
-      </S.Bar>
-    </S.Container>
+    <S.Wrapper
+      role="progressbar"
+      aria-valuenow={preventLowerThanZeroAndHigherThanHundred}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      $size={size}
+    >
+      <S.BarWrapper>
+        <S.Bar $progress={preventLowerThanZeroAndHigherThanHundred} />
+      </S.BarWrapper>
+    </S.Wrapper>
   )
 }
 

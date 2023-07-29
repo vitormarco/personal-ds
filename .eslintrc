@@ -37,6 +37,7 @@
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
+    "react/require-default-props": 0,
     "react/jsx-filename-extension": [
       1,
       {
