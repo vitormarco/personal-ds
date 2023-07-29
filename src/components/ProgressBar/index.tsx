@@ -31,7 +31,9 @@ const ProgressBar = ({ progress, size = 'large' }: IProgressBarProperties) => {
       aria-valuemax={100}
       $size={size}
     >
-      <VisuallyHidden>{progress}%</VisuallyHidden>
+      <VisuallyHidden>
+        {preventLowerThanZeroAndHigherThanHundred}%
+      </VisuallyHidden>
       <S.BarWrapper>
         <S.Bar $progress={preventLowerThanZeroAndHigherThanHundred} />
       </S.BarWrapper>
