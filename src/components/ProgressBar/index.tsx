@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 
 import { SizeType } from '@/types/ProgressBar/styles.types'
 
+import VisuallyHidden from '../VisuallyHidden'
 import * as S from './styles'
 
 interface IProgressBarProperties {
@@ -30,6 +31,7 @@ const ProgressBar = ({ progress, size = 'large' }: IProgressBarProperties) => {
       aria-valuemax={100}
       $size={size}
     >
+      <VisuallyHidden>{progress}%</VisuallyHidden>
       <S.BarWrapper>
         <S.Bar $progress={preventLowerThanZeroAndHigherThanHundred} />
       </S.BarWrapper>
