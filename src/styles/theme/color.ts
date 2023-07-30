@@ -1,10 +1,10 @@
 const color = {
   primary: {
-    lightest: 'hsl(60, 80%, 90%)',
-    light: 'hsl(60, 80%, 70%)',
-    base: 'hsl(60, 80%, 50%)',
-    dark: 'hsl(60, 80%, 30%)',
-    darkest: 'hsl(60, 80%, 10%)',
+    lightest: 'hsl(240, 80%, 90%)',
+    light: 'hsl(240, 80%, 70%)',
+    base: 'hsl(240, 80%, 60%)',
+    dark: 'hsl(240, 80%, 30%)',
+    darkest: 'hsl(240, 80%, 10%)',
   },
   secondary: {
     lightest: 'hsl(240, 80%, 90%)',
@@ -41,6 +41,13 @@ const color = {
       six: 'hsl(0, 0%, 100%, 0.6)',
       four: 'hsl(0, 0%, 100%, 0.4)',
       one: 'hsl(0, 0%, 100%, 0.1)',
+    },
+    gray: {
+      ten: 'hsl(0, 0%, 50%, 1)',
+      eight: 'hsl(0, 0%, 50%, 0.8)',
+      six: 'hsl(0, 0%, 50%, 0.6)',
+      four: 'hsl(0, 0%, 50%, 0.4)',
+      one: 'hsl(0, 0%, 50%, 0.1)',
     },
   },
 }

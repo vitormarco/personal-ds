@@ -1,6 +1,7 @@
 const border = {
   radius: {
     none: '0',
+    half: '4px',
     sm: '8px',
     md: '16px',
     lg: '23px',
