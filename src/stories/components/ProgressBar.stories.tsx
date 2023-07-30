@@ -4,6 +4,10 @@ import ProgressBar from '@/components/ProgressBar'
 
 const meta: Meta<typeof ProgressBar> = {
   component: ProgressBar,
+  args: {
+    progress: 0,
+    size: 'large',
+  },
   argTypes: {
     progress: {
       defaultValue: 0,
