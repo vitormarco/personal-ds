@@ -1,4 +1,3 @@
-
 <p align="center">
  <a href="#desing-system-pessoal">Sobre</a> •
  <a href="#funcionalidades">Funcionalidades</a> •
@@ -10,7 +9,7 @@
 # Desing System Pessoal
 
 Aplicação tem como objetivo principal criar um Design System, no qual iremos evitar uso excessivo de bibliotecas prontas.
-Principal objetivo desse projeto é melhorar meus conhecimentos em HTML, CSS, Javascript/Typescripit e React, visando 
+Principal objetivo desse projeto é melhorar meus conhecimentos em HTML, CSS, Javascript/Typescripit e React, visando
 componentizar e até entender como bibliotecas como Chakra UI, Radix UI e Tailwind UI fazem seus proprios componentes.
 
 Além disso, estou testando a ferramenta Vitest para os teste unitários dos componentes e o Storybook para documentação do front-end.
@@ -37,7 +36,7 @@ Foi implementado também automatização de garantia de qualidade de código, co
   - [ ] Feedback
     - [ ] Alert
     - [ ] Circular Progress
-    - [ ] Pogress
+    - [x] Pogress
     - [ ] Skeleton
     - [ ] Spinner
     - [ ] Toast
