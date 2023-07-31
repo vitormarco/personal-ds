@@ -9,13 +9,12 @@
 # Desing System Pessoal
 
 Aplicação tem como objetivo principal criar um Design System, no qual iremos evitar uso excessivo de bibliotecas prontas.
-Principal objetivo desse projeto é melhorar meus conhecimentos em HTML, CSS, Javascript/Typescripit e React, visando
-componentizar e até entender como bibliotecas como Chakra UI, Radix UI e Tailwind UI fazem seus proprios componentes.
+Principal objetivo desse projeto é melhorar meus conhecimentos em HTML, CSS, Javascript/Typescript e ReactJS (com NextJS), visando
+componentizar e até entender como bibliotecas como Chakra UI, Radix UI e Tailwind UI fazem seus próprios componentes.
 
-Além disso, estou testando a ferramenta Vitest para os teste unitários dos componentes e o Storybook para documentação do front-end.
-Com isso, objetivo é melhorar minha velocidade de desenvolvimento de teste unitários e a documentação dos componentes em si.
+Além disso, estou utilizando a ferramenta Vitest para realizar testes unitários dos componentes e o Storybook para a documentação do front-end. Com isso, meu objetivo é aprimorar a velocidade de desenvolvimento nos testes unitários e na documentação dos componentes em si.
 
-Foi implementado também automatização de garantia de qualidade de código, como husky, lint-staged, prettier e eslint.
+Foi implementada também a automatização da garantia de qualidade e padronização de código, utilizando ferramentas como Husky, lint-staged, Prettier e ESLint.
 
 <h4 align="center"> 🚧 Design System 🚀 Em construção 🚧 </h4>
 
