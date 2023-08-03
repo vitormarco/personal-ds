@@ -38,6 +38,8 @@
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
     "react/require-default-props": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "react/jsx-filename-extension": [
       1,
       {

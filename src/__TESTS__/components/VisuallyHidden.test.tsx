@@ -22,7 +22,7 @@ describe('#VisuallyHidden', () => {
   it('should be able to show text in development', async () => {
     render(<VisuallyHidden>description for screen readers</VisuallyHidden>)
 
-    await userEvent.keyboard('{Alt>}')
+    await userEvent.keyboard('{alt>}')
 
     const divElement = screen.queryByText(TEXT)
 
@@ -32,7 +32,7 @@ describe('#VisuallyHidden', () => {
   it('should be able to hidden text in development', async () => {
     render(<VisuallyHidden>description for screen readers</VisuallyHidden>)
 
-    await userEvent.keyboard('{Alt>1/}')
+    await userEvent.keyboard('{alt>1/}')
 
     const divElement = screen.queryByText(TEXT)
 
@@ -45,7 +45,7 @@ describe('#VisuallyHidden', () => {
     }
 
     render(<VisuallyHidden>description for screen readers</VisuallyHidden>)
-    await userEvent.keyboard('{Alt>1}')
+    userEvent.keyboard('{alt>}')
 
     const divElement = screen.queryByText(TEXT)
 

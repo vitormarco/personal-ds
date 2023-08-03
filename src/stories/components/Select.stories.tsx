@@ -9,7 +9,11 @@ const meta: Meta<typeof Select> = {
 type Story = StoryObj<typeof Select>
 
 export const Primary: Story = {
-  render: () => <Select />,
+  render: () => (
+    <Select id="filter-by" onChange={() => {}}>
+      Teste
+    </Select>
+  ),
 }
 
 export default meta
