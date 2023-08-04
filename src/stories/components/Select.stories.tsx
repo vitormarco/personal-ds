@@ -11,7 +11,9 @@ type Story = StoryObj<typeof Select>
 export const Primary: Story = {
   render: () => (
     <Select id="filter-by" onChange={() => {}}>
-      Teste
+      <option value="newest">Newest Releases</option>
+      <option value="price">Price</option>
+      <option value="curated">Curated</option>
     </Select>
   ),
 }
