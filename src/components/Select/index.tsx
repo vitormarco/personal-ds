@@ -6,26 +6,40 @@ import * as S from './styles'
 
 interface ISelectProperties {
   id: string
+  label: string
   value?: string | number | readonly string[]
-  onChange: (value: unknown) => void
+  onChange: (value: string) => void
   children: React.ReactNode
 }
 
-const Select = ({ id, value, onChange, children }: ISelectProperties) => {
+const Select = ({
+  id,
+  label,
+  value,
+  onChange,
+  children,
+}: ISelectProperties) => {
   const displayedValue = getDisplayedValue(children, value)
 
   return (
-    <S.Wrapper>
-      <S.NativeSelect id={id} value={value} onChange={onChange}>
-        {children}
-      </S.NativeSelect>
-      <S.PresentationalBit>
-        {displayedValue}
-        <S.IconWrapper>
-          <FaChevronDown key="chevron-down" size={16} />
-        </S.IconWrapper>
-      </S.PresentationalBit>
-    </S.Wrapper>
+    <S.Label htmlFor={id}>
+      {label}
+      <S.Wrapper>
+        <S.NativeSelect
+          id={id}
+          value={value}
+          onChange={({ target }) => onChange(target.value)}
+        >
+          {children}
+        </S.NativeSelect>
+        <S.PresentationalBit>
+          {displayedValue}
+          <S.IconWrapper>
+            <FaChevronDown key="chevron-down" size={16} />
+          </S.IconWrapper>
+        </S.PresentationalBit>
+      </S.Wrapper>
+    </S.Label>
   )
 }
 
