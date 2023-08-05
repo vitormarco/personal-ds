@@ -13,7 +13,7 @@ export const ManagedSelect = () => {
   const [value, setValue] = React.useState('newest')
 
   return (
-    <Select id="filter-by" label="" value={value} onChange={setValue}>
+    <Select id="filter-by" label="Filter by:" value={value} onChange={setValue}>
       <option value="newest">Newest Releases</option>
       <option value="price">Price</option>
       <option value="curated">Curated</option>
