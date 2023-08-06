@@ -9,7 +9,7 @@ const meta: Meta<typeof Select> = {
 
 type Story = StoryObj<typeof Select>
 
-export const ManagedSelect = () => {
+const ManagedSelect = () => {
   const [value, setValue] = React.useState('newest')
 
   return (

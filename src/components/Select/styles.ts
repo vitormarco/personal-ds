@@ -38,13 +38,13 @@ export const PresentationalBit = styled.div`
 
 export const IconWrapper = styled.div`
   position: absolute;
-  top: 8px;
+  top: 0px;
   bottom: 0;
   right: 10px;
   margin: auto;
   pointer-events: none;
-  width: fit-content;
-  height: fit-content;
+  width: 16px;
+  height: 16px;
 `
 
 export const Label = styled.label`
