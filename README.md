@@ -26,7 +26,7 @@ Foi implementada também a automatização da garantia de qualidade e padroniza�
   - [ ] Tipografia
   - [ ] Button
   - [ ] Modal
-  - [ ] Select
+  - [x] Select
   - [ ] Drawer
   - [ ] Info card
   - [ ] Card
