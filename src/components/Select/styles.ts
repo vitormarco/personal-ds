@@ -6,14 +6,17 @@ export const Wrapper = styled.div`
 `
 
 export const NativeSelect = styled.select`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  /* Allow the select to span the full height in Safari */
-  appearance: none;
+  ${({ theme }) => css`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* Allow the select to span the full height in Safari */
+    appearance: none;
+    padding: ${theme.spacing.half};
+  `}
 `
 
 export const PresentationalBit = styled.div`
