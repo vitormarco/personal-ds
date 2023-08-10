@@ -79,11 +79,11 @@ $ yarn
 # ou
 $ npm install
 
-# execute o script para inicial o projeto
-$ yarn dev
+# execute o storybook para visualizar os componentes do projeto
+$ yarn storybook
 
 # ou
-$ npm run dev
+$ npm run storybook
 ```
 
 ## Tecnologias
