@@ -10,5 +10,5 @@ export default meta
 type Story = StoryObj<typeof Input>
 
 export const Primary: Story = {
-  render: () => <Input />,
+  render: () => <Input label="search" placeholder="Seach by name" />,
 }
