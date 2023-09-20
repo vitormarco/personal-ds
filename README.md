@@ -12,7 +12,7 @@ Aplicação tem como objetivo principal criar um Design System, no qual iremos e
 Principal objetivo desse projeto é melhorar meus conhecimentos em HTML, CSS, Javascript/Typescript e ReactJS (com NextJS), visando
 componentizar e até entender como bibliotecas como Chakra UI, Radix UI e Tailwind UI fazem seus próprios componentes.
 
-Além disso, estou utilizando a ferramenta Vitest para realizar testes unitários dos componentes e o Storybook para a documentação do front-end. Com isso, meu objetivo é aprimorar a velocidade de desenvolvimento nos testes unitários e na documentação dos componentes em si.
+Além disso, estou utilizando a ferramenta Jest para realizar testes unitários dos componentes e o Storybook para a documentação do front-end. Com isso, meu objetivo é aprimorar a velocidade de desenvolvimento nos testes unitários e na documentação dos componentes em si.
 
 Foi implementada também a automatização da garantia de qualidade e padronização de código, utilizando ferramentas como Husky, lint-staged, Prettier e ESLint.
 
@@ -94,7 +94,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - ✔️ [Typescript](https://www.typescriptlang.org/)
 - ✔️ [Next](https://nextjs.org/docs/basic-features/typescript)
 - ✔️ [Storybook](https://storybook.js.org/)
-- ✔️ [Vitest](https://vitest.dev/)
 - ✔️ [Styled Components](https://styled-components.com/)
 
 > Veja o arquivo [package.json](https://github.com/vitormarco/personal-ds/blob/main/package.json)
