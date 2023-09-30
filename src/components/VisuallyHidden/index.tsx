@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import Wrapper from './styles'
+import styles from './styles.module.css'
 
 interface IVisuallyHiddenProperties {
   children: React.ReactNode
@@ -37,7 +37,7 @@ const VisuallyHidden = ({ children }: IVisuallyHiddenProperties) => {
     return children
   }
 
-  return <Wrapper>{children}</Wrapper>
+  return <div className={styles.wrapper}>{children}</div>
 }
 
 export default VisuallyHidden

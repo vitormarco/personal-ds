@@ -1,3 +1,4 @@
+import '@/styles/lib/tailwind-globals.css'
 import '@/styles/global.css'
 
 export const metadata = {
